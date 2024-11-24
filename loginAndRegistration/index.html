@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Login & Registration Toggle</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <!-- Login Form -->
+    <div class="form-container" id="login-form">
+      <h2>Login</h2>
+      <form>
+        <label for="login-email">Email:</label>
+        <input type="email" id="login-email" placeholder="Enter your email" required>
+
+        <label for="login-password">Password:</label>
+        <input type="password" id="login-password" placeholder="Enter your password" required>
+
+        <button type="submit">Login</button>
+      </form>
+      <p>Don't have an account? <a href="#" id="show-register">Register here</a></p>
+    </div>
+
+    <!-- Registration Form -->
+    <div class="form-container hidden" id="register-form">
+      <h2>Register</h2>
+      <form>
+        <label for="register-name">Full Name:</label>
+        <input type="text" id="register-name" placeholder="Enter your full name" required>
+
+        <label for="register-email">Email:</label>
+        <input type="email" id="register-email" placeholder="Enter your email" required>
+
+        <label for="register-password">Password:</label>
+        <input type="password" id="register-password" placeholder="Enter your password" required>
+
+        <label for="register-confirm-password">Confirm Password:</label>
+        <input type="password" id="register-confirm-password" placeholder="Confirm your password" required>
+
+        <button type="submit">Register</button>
+      </form>
+      <p>Already have an account? <a href="#" id="show-login">Login here</a></p>
+    </div>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
